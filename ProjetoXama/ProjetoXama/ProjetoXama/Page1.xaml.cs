@@ -36,7 +36,7 @@ namespace ProjetoXama
             {
                 Text = "Banco de dados",
                 FontSize = 20,
-                TextColor = Color.Blue,
+                TextColor = Color.Yellow,
             };
 
             Label lb3 = new Label()
