@@ -48,7 +48,10 @@ namespace ProjetoXama
 
             StackLayout stk2 = new StackLayout()
             {
-                Orientation = StackOrientation.Horizontal
+                Orientation = StackOrientation.Horizontal,
+                HorizontalOptions = LayoutOptions.Center,
+                Padding = new Thickness(20),
+                VerticalOptions = LayoutOptions.Center
             };
 
             stk2.Children.Add(lb2);
@@ -64,8 +67,26 @@ namespace ProjetoXama
                 VerticalOptions = LayoutOptions.Center
             };
             stk.Children.Add(img);
-            Content = stk;
 
+            Button bt1 = new Button()
+            {
+                Text = "Enviar",
+                Padding = new Thickness(15),
+                HeightRequest = 45,
+                WidthRequest = 200,
+                BackgroundColor = Color.DarkGreen,
+                TextColor = Color.White,
+                FontSize = 15,
+                Margin = new Thickness(20)
+            };
+            bt1.Clicked += Bt1_Clicked;
+            stk.Children.Add(bt1);
+            Content = stk;
+        }
+        private void Bt1_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Cuidado!", "Você está sendo hackeado", "OK");
         }
     }
 }
+
