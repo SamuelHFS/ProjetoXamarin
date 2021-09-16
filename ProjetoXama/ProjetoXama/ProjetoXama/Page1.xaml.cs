@@ -32,6 +32,38 @@ namespace ProjetoXama
             };
             stk.Children.Add(lb1);
 
+            Label lb2 = new Label()
+            {
+                Text = "Banco de dados",
+                FontSize = 20,
+                TextColor = Color.DarkBlue,
+            };
+
+            Label lb3 = new Label()
+            {
+                Text = "Java Web (EE)",
+                FontSize = 20,
+                TextColor = Color.DarkRed,
+            };
+
+            StackLayout stk2 = new StackLayout()
+            {
+                Orientation = StackOrientation.Horizontal
+            };
+
+            stk2.Children.Add(lb2);
+            stk2.Children.Add(lb3);
+
+            stk.Children.Add(stk2);
+
+            Image img = new Image()
+            {
+                Source = "jureg.png",
+                HeightRequest = 150,
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center
+            };
+            stk.Children.Add(img);
             Content = stk;
 
         }
