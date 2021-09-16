@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ProjetoXama.MainPage">
+    <ScrollView>
+    <StackLayout Orientation="Vertical">
+        <!-- Place new controls here -->
+        <Frame BackgroundColor="#2196F3" Padding="18" CornerRadius="0">
+        <Label Text="Meu primeiro Projeto Xamarin" HorizontalTextAlignment="Center" TextColor="White" FontSize="24"/>
+        </Frame>
+        <Label Text="texto 1" FontSize="Title" BackgroundColor="lime" Padding="20" HorizontalTextAlignment="Center"/>
+        <Label Text="Texto 02" FontSize="Title" Padding="30,10,30,10"/>
+        <Image Source="https://www.hypeness.com.br/1/2018/12/imagens-surreais.jpg" 
+               WidthRequest="100" HeightRequest="200"/>
+            <Image Source="jureg.jpg" HorizontalOptions="Center" HeightRequest="150"/>
+            <Image Source="jureg.jpg" HorizontalOptions="Center" HeightRequest="150"/>
+            <Image Source="jureg.jpg" HorizontalOptions="Center" HeightRequest="150"/>
+            <Image Source="jureg.jpg" HorizontalOptions="Center" HeightRequest="150"/>
+            <Button Text="Enviar" Padding="20" HorizontalOptions="Center" BackgroundColor="WhiteSmoke"
+                TextColor="Black" FontSize="20" FontAttributes="Bold" Clicked="btEnviar"/>
+    </StackLayout>
+</ScrollView>
+</ContentPage>
