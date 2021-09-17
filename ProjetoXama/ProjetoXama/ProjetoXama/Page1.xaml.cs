@@ -22,7 +22,7 @@ namespace ProjetoXama
             };
             Label lb1 = new Label()
             {
-                Text = "curso ",
+                Text = "curso taç",
                 FontAttributes = FontAttributes.Bold,
                 FontSize = 24,
                 BackgroundColor = Color.Black,
